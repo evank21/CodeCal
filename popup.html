@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+      integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47"
+      crossorigin="anonymous"
+    />
     <style>
       img {
-        width: 100px;
+        padding: 5px;
+        width: 130px;
         height: auto;
       }
       .flex-container {
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-wrap: nowrap;
-        width: 250px;
+        width: 260px;
       }
       .dateContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
         width: 250px;
         height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #000000;
+        bottom: 10px;
+        transition: all 0.2s ease-in-;
       }
       .individualEvents {
         width: 200px;
-        border-color: blue;
+        border-color: rgb(7, 7, 75);
         border-width: 2px;
+        border-radius: 5px;
         border-style: solid;
         margin: 2px;
+        padding: 2px;
       }
       .button-left {
         width: 25px;
@@ -29,23 +49,24 @@
         width: 25px;
       }
       .events {
-        width: 200px;
+        width: 270px;
         margin: 5px;
       }
     </style>
   </head>
   <body>
-    <div id="logo">
-      <img src="images/codesmithBtn.png" />
+    <div></div>
+    <div class="flex-container" id="logo">
+      <img src="images/codesmithBtn128.png" />
     </div>
-    <div id="dateContainer" class="dateContainer"></div>
+    <h1 id="dateContainer" class="dateContainer"></h1>
     <div class="flex-container">
       <div class="button-left">
         <button type="button"><</button>
       </div>
       <div class="events" id="events"></div>
       <div class="button-right">
-        <button type="button">></button>
+        <button>></button>
       </div>
     </div>
     <script src="popup.js"></script>
