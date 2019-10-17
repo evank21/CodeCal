@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      img {
+        width: 100px;
+        height: auto;
+      }
+      .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 250px;
+      }
+      .dateContainer {
+        width: 250px;
+        height: 40px;
+      }
+      .individualEvents {
+        width: 200px;
+        border-color: blue;
+        border-width: 2px;
+        border-style: solid;
+        margin: 2px;
+      }
+      .button-left {
+        width: 25px;
+      }
+      .button-right {
+        width: 25px;
+      }
+      .events {
+        width: 200px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="logo">
+      <img src="images/codesmithBtn.png" />
+    </div>
+    <div id="dateContainer" class="dateContainer"></div>
+    <div class="flex-container">
+      <div class="button-left">
+        <button type="button"><</button>
+      </div>
+      <div class="events" id="events"></div>
+      <div class="button-right">
+        <button type="button">></button>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
