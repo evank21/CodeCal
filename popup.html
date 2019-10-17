@@ -43,10 +43,14 @@
         padding: 2px;
       }
       .button-left {
-        width: 25px;
+        /* width: auto;
+        height: auto; */
+        flex: 1;
       }
       .button-right {
-        width: 25px;
+        /* width: auto;
+        height: auto; */
+        flex: 1;
       }
       .events {
         width: 270px;
@@ -62,11 +66,11 @@
     <h1 id="dateContainer" class="dateContainer"></h1>
     <div class="flex-container">
       <div class="button-left">
-        <button type="button"><</button>
+        <button id="button-left"><</button>
       </div>
       <div class="events" id="events"></div>
       <div class="button-right">
-        <button>></button>
+        <button id="button-right">></button>
       </div>
     </div>
     <script src="popup.js"></script>

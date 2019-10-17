@@ -1,12 +1,8 @@
 {
-  "name": "Getting Started Example",
+  "name": "CodeCal",
   "version": "1.0",
-  "description": "Build an Extension!",
+  "description": "See what's next on your Codesmith schedule!",
   "permissions": ["activeTab", "declarativeContent", "storage"],
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
